@@ -53,10 +53,10 @@ body {
 }
 
 .about-photo {
-  width: 170px;
-  height: 220px;
-  border-radius: 8px;
-  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 90px;
+  object-fit: cover;  
 }
 
 .about-text {
@@ -76,6 +76,7 @@ body {
 .pricing {
   padding: 2rem;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .pricing h2 {
@@ -96,8 +97,20 @@ body {
   padding: 1.5rem;
   text-align: center;
   width: 250px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
+.price-item-1{
+  box-shadow:0px 4px 15px yellow;
+}
+.price-item-2{
+  box-shadow:0px 4px 15px green;
+}
+.price-item-3{
+  box-shadow:0px 4px 15px blue;
+}
+.price-item-4{
+  box-shadow:0px 4px 15px red;
+}
+
 
 .price-item h3 {
   font-size: 1.5rem;
@@ -161,7 +174,7 @@ body {
   background: rgba(255, 255, 255, 0.1);
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 15px white;
   text-align: center;
 }
 
