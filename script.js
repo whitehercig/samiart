@@ -1,14 +1,21 @@
-// Функция для открытия модального окна
-function openModal(imageSrc) {
-    var modal = document.getElementById("myModal");
-    var modalImage = document.getElementById("modalImage");
-    modal.style.display = "flex";
-    modalImage.src = imageSrc;
+    // Функция для открытия модального окна
+    function openModal(imageSrc) {
+      var modal = document.getElementById("myModal");
+      var modalImg = document.getElementById("img01");
+      modal.style.display = "flex";
+      modalImg.src = imageSrc;
   }
-  
-  // Функция для закрытия модального окна
-  function closeModal() {
-    var modal = document.getElementById("myModal");
-    modal.style.display = "none";
+
+  // Функция для увеличения/уменьшения изображения
+  function toggleZoom(modal) {
+      var img = modal.querySelector(".modal-content");
+      img.classList.toggle("zoomed");
   }
-  
+
+  // Закрытие модального окна при клике вне изображения
+  document.getElementById("myModal").addEventListener("click", function(event) {
+      if (event.target === this) {
+          this.style.display = "none";
+          this.querySelector(".modal-content").classList.remove("zoomed");
+      }
+  });
