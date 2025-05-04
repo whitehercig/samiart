@@ -1,4 +1,3 @@
-/* Общие стили */
 * {
   margin: 0;
   padding: 0;
@@ -38,7 +37,6 @@ body {
   color: #61dafb;
 }
 
-/* Блок "О нас" с фото */
 .about {
   background: rgba(0, 0, 0, 0.2);
   padding: 2rem;
@@ -73,7 +71,6 @@ body {
   margin-bottom: 0.5rem;
 }
 
-/* Цены */
 .pricing {
   padding: 2rem;
   text-align: center;
@@ -141,7 +138,6 @@ body {
   background: #4a8fc6;
 }
 
-/* Адаптивность */
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;
@@ -154,7 +150,7 @@ body {
   }
 }
 
-/* Галерея */
+
 .gallery {
   padding: 2rem;
   text-align: center;
@@ -189,7 +185,6 @@ body {
 .gallery-item p {
   margin-top: 0.5rem;
 }
-/* Модальное окно */
 .modal {
   display: none; /* по умолчанию скрыто */
   position: fixed;
